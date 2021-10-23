@@ -13,8 +13,14 @@
 		FE279EFF2724443B008C5687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE279EFD2724443B008C5687 /* Main.storyboard */; };
 		FE279F0127244445008C5687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE279F0027244445008C5687 /* Assets.xcassets */; };
 		FE279F0427244445008C5687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE279F0227244445008C5687 /* LaunchScreen.storyboard */; };
-		FE279F0F27244445008C5687 /* hw5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE279F0E27244445008C5687 /* hw5Tests.swift */; };
 		FE279F1A27244445008C5687 /* hw5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE279F1927244445008C5687 /* hw5UITests.swift */; };
+		FE279F34272452AF008C5687 /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = FE279F33272452AF008C5687 /* Person.json */; };
+		FE279F392724554F008C5687 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE279F382724554F008C5687 /* Model.swift */; };
+		FE279F3E272457AD008C5687 /* FileJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE279F3D272457AD008C5687 /* FileJsonDecoder.swift */; };
+		FE279F46272468BA008C5687 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE279F45272468BA008C5687 /* PersonCell.swift */; };
+		FEFE62DC272491B4003984D1 /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE62DB272491B4003984D1 /* DataTest.swift */; };
+		FEFE62FE2724A289003984D1 /* PersonBad.json in Resources */ = {isa = PBXBuildFile; fileRef = FEFE62FC2724A289003984D1 /* PersonBad.json */; };
+		FEFE62FF2724A289003984D1 /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = FEFE62FD2724A289003984D1 /* Person.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +50,17 @@
 		FE279F0327244445008C5687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE279F0527244445008C5687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE279F0A27244445008C5687 /* hw5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hw5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE279F0E27244445008C5687 /* hw5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw5Tests.swift; sourceTree = "<group>"; };
 		FE279F1027244445008C5687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE279F1527244445008C5687 /* hw5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hw5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE279F1927244445008C5687 /* hw5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw5UITests.swift; sourceTree = "<group>"; };
 		FE279F1B27244445008C5687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE279F33272452AF008C5687 /* Person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
+		FE279F382724554F008C5687 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FE279F3D272457AD008C5687 /* FileJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileJsonDecoder.swift; sourceTree = "<group>"; };
+		FE279F45272468BA008C5687 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		FEFE62DB272491B4003984D1 /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
+		FEFE62FC2724A289003984D1 /* PersonBad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonBad.json; sourceTree = "<group>"; };
+		FEFE62FD2724A289003984D1 /* Person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +113,11 @@
 			children = (
 				FE279EF72724443B008C5687 /* AppDelegate.swift */,
 				FE279EF92724443B008C5687 /* SceneDelegate.swift */,
-				FE279EFB2724443B008C5687 /* ViewController.swift */,
-				FE279EFD2724443B008C5687 /* Main.storyboard */,
-				FE279F0027244445008C5687 /* Assets.xcassets */,
-				FE279F0227244445008C5687 /* LaunchScreen.storyboard */,
-				FE279F0527244445008C5687 /* Info.plist */,
+				FE279F5327247562008C5687 /* Helpers */,
+				FE279F54272477A8008C5687 /* Model */,
+				FE279F5127247500008C5687 /* View */,
+				FE279F5227247528008C5687 /* Controllers */,
+				FE279F4A272473AD008C5687 /* Resources */,
 			);
 			path = hw5;
 			sourceTree = "<group>";
@@ -113,7 +125,9 @@
 		FE279F0D27244445008C5687 /* hw5Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FE279F0E27244445008C5687 /* hw5Tests.swift */,
+				FEFE62FD2724A289003984D1 /* Person.json */,
+				FEFE62FC2724A289003984D1 /* PersonBad.json */,
+				FEFE62DB272491B4003984D1 /* DataTest.swift */,
 				FE279F1027244445008C5687 /* Info.plist */,
 			);
 			path = hw5Tests;
@@ -126,6 +140,50 @@
 				FE279F1B27244445008C5687 /* Info.plist */,
 			);
 			path = hw5UITests;
+			sourceTree = "<group>";
+		};
+		FE279F4A272473AD008C5687 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE279F0027244445008C5687 /* Assets.xcassets */,
+				FE279F0527244445008C5687 /* Info.plist */,
+				FE279EFD2724443B008C5687 /* Main.storyboard */,
+				FE279F0227244445008C5687 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE279F5127247500008C5687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE279F45272468BA008C5687 /* PersonCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE279F5227247528008C5687 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE279EFB2724443B008C5687 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE279F5327247562008C5687 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE279F3D272457AD008C5687 /* FileJsonDecoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FE279F54272477A8008C5687 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE279F382724554F008C5687 /* Model.swift */,
+				FE279F33272452AF008C5687 /* Person.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE279F0427244445008C5687 /* LaunchScreen.storyboard in Resources */,
+				FE279F34272452AF008C5687 /* Person.json in Resources */,
 				FE279F0127244445008C5687 /* Assets.xcassets in Resources */,
 				FE279EFF2724443B008C5687 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFE62FF2724A289003984D1 /* Person.json in Resources */,
+				FEFE62FE2724A289003984D1 /* PersonBad.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE279F46272468BA008C5687 /* PersonCell.swift in Sources */,
 				FE279EFC2724443B008C5687 /* ViewController.swift in Sources */,
 				FE279EF82724443B008C5687 /* AppDelegate.swift in Sources */,
 				FE279EFA2724443B008C5687 /* SceneDelegate.swift in Sources */,
+				FE279F392724554F008C5687 /* Model.swift in Sources */,
+				FE279F3E272457AD008C5687 /* FileJsonDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE279F0F27244445008C5687 /* hw5Tests.swift in Sources */,
+				FEFE62DC272491B4003984D1 /* DataTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = hw5/Info.plist;
+				INFOPLIST_FILE = hw5/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = hw5/Info.plist;
+				INFOPLIST_FILE = hw5/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
